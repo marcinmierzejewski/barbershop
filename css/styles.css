@@ -1,0 +1,12 @@
+:root {
+  /* font-family */
+  --main-font-Sans: 'Open Sans', sans-serif;
+  --secondary-font-Raleway: 'Raleway', sans-serif;
+  /* font-size */
+  --main-font-size: 16px;
+}
+
+body {
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-Sans);
+}
