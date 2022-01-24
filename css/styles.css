@@ -4,9 +4,113 @@
   --secondary-font-Raleway: 'Raleway', sans-serif;
   /* font-size */
   --main-font-size: 16px;
+  --font-size-12: 0.75rem;
+  /* line-height */
+  --l-height-16: 1rem;
+  /* letter-spacing */
+  --l-spacing-1: 0.1em;
+  /* font-color */
+  --font-color-main: #303030;
+  --font-color-white: #FFFFFF;
+  --font-color-hover: #FF6C00
 }
 
 body {
   font-size: var(--main-font-size);
   font-family: var(--main-font-Sans);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.disp-flex {
+  display: flex;
+}
+
+.btn-white {
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+/* 
+==================================================
+HEADER
+=================================================
+*/
+.header {
+  justify-content: center;
+}
+
+.container-navigation {
+  align-items: center;
+  /* margin: 0 auto; */
+  
+}
+
+.navigation-logo {
+  margin-right: 71px;
+}
+
+.navigation-items,
+.navigation-tel {
+  /* color: var(--font-color-white); */
+  font-weight: 600;
+  font-size: var(--font-size-12);
+  line-height: var(--l-height-16);
+  letter-spacing: var(--l-spacing-1);
+}
+
+.navigation-items:not(:last-child) {
+  margin-right: 41px;
+}
+
+.navigation-tel {
+  font-style: normal;
+  margin-right: 37px;
+  margin-left: auto;
+}
+

@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marcin Mierzejewski" />
     <title>barbershop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
     />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <a href="#">
+    <header class="header container disp-flex">
+      <nav class="container-navigation disp-flex">
+        <a class="navigation-logo" href="#">
           <img src="images/Logo.svg" alt="logo icon" width="69" height="56" />
         </a>
-        <ul>
-          <li>O nas</li>
-          <li>Usługi i ceny</li>
-          <li>Barberzy</li>
-          <li>Kontakt</li>
+        <ul class="navigation-list list disp-flex">
+          <li class="navigation-items"><a class="link" href="#">O nas</a></li>
+          <li class="navigation-items">
+            <a class="link" href="#">Usługi i ceny</a>
+          </li>
+          <li class="navigation-items">
+            <a class="link" href="#">Barberzy</a>
+          </li>
+          <li class="navigation-items"><a class="link" href="#">Kontakt</a></li>
         </ul>
-        <address><a href="tel:+48111111111">+48 111 111 111</a></address>
-        <button type="button">Rejestracja online</button>
+        <address><a class="navigation-tel link" href="tel:+48111111111">+48 111 111 111</a></address>
+        <button class="btn-white" type="button">Rejestracja online</button>
       </nav>
     </header>
 
@@ -220,9 +227,20 @@
       <section>
         <h2>Rezerwacja online</h2>
         <form action="#" method="post">
-          <input type="text" name="" id="form-name" placeholder="IMIĘ" required>
-          <input type="tel" name="" id="form-tel" placeholder="TELEFON">
-          <textarea name="textarea" id="form-textarea"  rows="4" placeholder="Wiadomość"></textarea>
+          <input
+            type="text"
+            name=""
+            id="form-name"
+            placeholder="IMIĘ"
+            required
+          />
+          <input type="tel" name="" id="form-tel" placeholder="TELEFON" />
+          <textarea
+            name="textarea"
+            id="form-textarea"
+            rows="4"
+            placeholder="Wiadomość"
+          ></textarea>
           <button type="submit">WYSłAĆ</button>
         </form>
         <h2>Kontakt</h2>
@@ -230,7 +248,9 @@
           <ul>
             <li>ul. Prosta 20 Warszawa, 00-001</li>
             <li><a href="tel:+48111111111"></a>+48 111 111 111</li>
-            <li><a href="mailto:barbershop@email.com"></a>barbershop@email.com</li>
+            <li>
+              <a href="mailto:barbershop@email.com"></a>barbershop@email.com
+            </li>
           </ul>
         </address>
         <p>GODZINY OTWARCIA</p>
