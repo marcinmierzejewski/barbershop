@@ -1,1 +1,1 @@
-# barbershop
+https://marcinmierzejewski.github.io/barbershop/
