@@ -4,20 +4,32 @@
   --secondary-font-Raleway: 'Raleway', sans-serif;
   /* font-size */
   --main-font-size: 16px;
+  --font-size-11: 0.6875rem;
   --font-size-12: 0.75rem;
+  --font-size-18: 1.125rem;
+  --font-size-72: 4.5rem;
   /* line-height */
+  --l-height-15: 0.9375rem;
   --l-height-16: 1rem;
+  --l-height-30: 1.875rem;
+  --l-height-85: 5.3125rem;
   /* letter-spacing */
   --l-spacing-1: 0.1em;
   /* font-color */
   --font-color-main: #303030;
   --font-color-white: #FFFFFF;
-  --font-color-hover: #FF6C00
+  --font-color-hover: #FF6C00;
+  --font-color-before: rgba(157, 164, 189, 0.6);
+  --font-color-grey: #9DA4BD;
 }
 
-body {
+html {
   font-size: var(--main-font-size);
+}
+
+body {  
   font-family: var(--main-font-Sans);
+  color: var(--font-color-main);
 }
 
 h1,
@@ -77,8 +89,8 @@ img {
 
 .btn-white {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: var(--font-size-12);
+  line-height: var(--l-height-16);
   letter-spacing: 0.09em;
   border: 1px solid #FF6C00;
   border-radius: 25px;
@@ -136,4 +148,60 @@ HEADER
   margin-left: auto;
 }
 
+/* 
+==================================================
+HERO
+=================================================
+*/
+.hero-left-side {
+  width: 155px;
+}
 
+.hero-list .list-item  { 
+  font-weight: 600;
+  font-size: var(--font-size-11);
+  line-height: var(--l-height-15);
+  letter-spacing: 0.2em;
+  /* transform: rotate(-90deg); */
+}
+
+.hero-list .list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero-right-side {
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  width: 100%;
+  background-color: #303030;
+}
+
+
+.before-title {
+  font-weight: 600;
+  font-size: var(--font-size-11);
+  line-height: var(--l-height-15);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--font-color-before)
+}
+
+.main-title {
+  font-family: var(--secondary-font-Raleway);
+  font-weight: 700;
+  font-size: var(--font-size-72);
+  line-height: var(--l-height-85);  
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--font-color-white);
+}
+
+.hero-content {
+  font-size: var(--font-size-18);
+  line-height: var(--l-height-30);
+  letter-spacing: 0.02em;
+  color: var(--font-color-grey);
+  width: 363px;
+}
