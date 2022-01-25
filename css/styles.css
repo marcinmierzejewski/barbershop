@@ -6,12 +6,14 @@
   --main-font-size: 16px;
   --font-size-11: 0.6875rem;
   --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
   --font-size-18: 1.125rem;
   --font-size-42: 2.625rem;
   --font-size-72: 4.5rem;
   /* line-height */
   --l-height-15: 0.9375rem;
   --l-height-16: 1rem;
+  --l-height-26: 1.625rem;
   --l-height-30: 1.875rem;
   --l-height-49: 3.0625rem;
   --l-height-85: 5.3125rem;
@@ -123,6 +125,15 @@ img {
   background-color: var(--font-color-hover);
 }
 
+.before-title {
+  font-weight: 600;
+  font-size: var(--font-size-11);
+  line-height: var(--l-height-15);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--font-color-before)
+}
+
 .section-title {  
   font-family: var(--secondary-font-Raleway);
   font-weight: 700;
@@ -208,16 +219,6 @@ HERO
   background-color: #303030;
 }
 
-
-.before-title {
-  font-weight: 600;
-  font-size: var(--font-size-11);
-  line-height: var(--l-height-15);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--font-color-before)
-}
-
 .main-title {
   font-family: var(--secondary-font-Raleway);
   font-weight: 700;
@@ -242,7 +243,6 @@ HERO
 ABOUT-US
 =================================================
 */
-
 .title-description {
   font-size: var(--font-size-18);
   line-height: var(--l-height-30);
@@ -253,8 +253,8 @@ ABOUT-US
 }
 
 .title-content {
-  font-size: 14px;
-  line-height: 26px;
+  font-size: var(--font-size-14);
+  line-height: var(--l-height-26);
   letter-spacing: 0.02em;
   color: var(--font-color-title);
   margin-bottom: 40px;
@@ -267,4 +267,44 @@ ABOUT-US
 .about-right-side {
   margin-left: 65px;
   width: 500px;
+}
+
+/* 
+==================================================
+SERVICES-AND-PRICES
+=================================================
+*/
+.services {
+  background-color: #303030;
+  color: var(--font-color-white);
+  width: 100%;
+}
+
+.services-list-container {
+  margin-top: 44px;
+  margin-bottom: 46px;
+}
+
+.service-left-side,
+.service-right-side {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid black;
+}
+
+.prices {
+  margin-left: auto;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service-btn {
+  display: block;
+  margin: 0 auto;
 }
