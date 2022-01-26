@@ -167,7 +167,7 @@
       </section>
 
       <!-- barbers -->      
-      <section class="section">
+      <section class="barbers section">
         <div class="container">
           <p class="before-title">Dla prawdziwych mężczyzn</p>
           <h2 class="section-title">Nasi barberzy</h2>
@@ -219,86 +219,98 @@
       </section>
 
       <!-- gallery -->
-      <section>
-        <p>W języku łacinskim “barba” oznacza “broda”</p>
-        <ul>
-          <li>
-            <img
-              src="images/gallery/img1.jpg"
-              alt="barber cutting the hair"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="images/gallery/img2.jpg"
-              alt="barber shaves beard"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="images/gallery/img3.jpg"
-              alt="barber places a towel over client face"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="images/gallery/img4.jpg"
-              alt="barber cutting the neck"
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
+      <section class="gallery section">
+        <div class="container">
+          <p class="before-title">W języku łacinskim “barba” oznacza “broda”</p>
+          <ul class="gallery-list list disp-flex">
+            <li class="gallery-list-item">
+              <img
+                src="images/gallery/img1.jpg"
+                alt="barber cutting the hair"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="images/gallery/img2.jpg"
+                alt="barber shaves beard"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="images/gallery/img3.jpg"
+                alt="barber places a towel over client face"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="images/gallery/img4.jpg"
+                alt="barber cutting the neck"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- kontakt -->
-      <section>
-        <h2>Rezerwacja online</h2>
-        <form action="#" method="post">
-          <input
-            type="text"
-            name=""
-            id="form-name"
-            placeholder="IMIĘ"
-            required
-          />
-          <input type="tel" name="" id="form-tel" placeholder="TELEFON" />
-          <textarea
-            name="textarea"
-            id="form-textarea"
-            rows="4"
-            placeholder="Wiadomość"
-          ></textarea>
-          <button type="submit">WYSłAĆ</button>
-        </form>
-        <h2>Kontakt</h2>
-        <address>
-          <ul>
-            <li>ul. Prosta 20 Warszawa, 00-001</li>
-            <li><a href="tel:+48111111111"></a>+48 111 111 111</li>
-            <li>
-              <a href="mailto:barbershop@email.com"></a>barbershop@email.com
-            </li>
-          </ul>
-        </address>
-        <p>GODZINY OTWARCIA</p>
-        <p>Codziennie od <time>9:00 do 22:00</time></p>
+      <section class="contact section">
+        <div class="container disp-flex">
+          <div class="contact-left-side">
+            <h2 class="form-section-title">Rezerwacja online</h2>
+            <form class="form" action="#" method="post">
+              <input
+                type="text"
+                name=""
+                id="form-name"
+                placeholder="IMIĘ"
+                required
+              />
+              <input type="tel" name="" id="form-tel" placeholder="TELEFON" />
+              <div>
+                <textarea
+                  name="textarea"
+                  id="form-textarea"
+                  rows="4"
+                  placeholder="Wiadomość"
+                ></textarea>
+              </div>
+              <button type="submit">WYSłAĆ</button>
+            </form>
+          </div>
+          <div class="contact-right-side">
+            <h2 class="form-section-title">Kontakt</h2>
+            <address>
+              <ul class="list">
+                <li>ul. Prosta 20 Warszawa, 00-001</li>
+                <li><a href="tel:+48111111111"></a>+48 111 111 111</li>
+                <li>
+                  <a href="mailto:barbershop@email.com"></a>barbershop@email.com
+                </li>
+              </ul>
+            </address>
+            <p>GODZINY OTWARCIA</p>
+            <p>Codziennie od <time>9:00 do 22:00</time></p>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer>
-      <p>&#169;Copyright</p>
-      <ul>
-        <li>Instagram</li>
-        <li>Youtube</li>
-      </ul>
+    <footer class="footer">
+      <div class="container disp-flex">
+        <p class="footer-copyright">&#169; Copyright</p>
+        <ul class="footer-list list disp-flex">
+          <li class="footer-list-item">Instagram</li>
+          <li class="footer-list-item">Youtube</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
