@@ -325,28 +325,33 @@ WHY-US
 */
 .why-us-left-side {
   width: 470px;
+  margin-right: 130px;
 }
 
 .why-us-right-side {
   width: 445px;
+  
 }
 
 .why-us-list {
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.why-us-items:nth-child(2) {
-  margin-top: 38px;
+.why-us-items:nth-child(even) {
+  margin-top: 30px;
+}
+
+.why-us-items:nth-child(odd) {
+  margin-right: 30px;
 }
 
 .why-us-items {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  /* text-align: center; */
-  
+  border: 1px solid black;  
+  align-items: flex-start;  
 }
 
 .why-us-numb {
