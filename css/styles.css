@@ -27,6 +27,7 @@
   --font-color-before: rgba(157, 164, 189, 0.6);
   --font-color-grey: #9DA4BD;
   --font-color-title: #555555;
+  --color-background-light: #f7f7f7;
 }
 
 html {
@@ -61,6 +62,10 @@ p {
 
 img {
   display: block;
+}
+
+figure {
+  margin: 0;
 }
 
 .list {
@@ -132,7 +137,6 @@ img {
   line-height: var(--l-height-15);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--font-color-before)
 }
 
 .section-title {  
@@ -239,6 +243,10 @@ HERO
   width: 363px;
 }
 
+.hero .before-title {  
+  color: var(--font-color-before)
+}
+
 /* 
 ==================================================
 ABOUT-US
@@ -317,12 +325,19 @@ SERVICES-AND-PRICES
   display: block;
   margin: 0 auto;
 }
+.services .before-title {
+  color: var(--font-color-before)
+}
 
 /* 
 ==================================================
 WHY-US
 =================================================
 */
+.why-us {
+  background-color: var(--color-background-light);
+}
+
 .why-us-left-side {
   width: 470px;
   margin-right: 130px;
@@ -369,3 +384,33 @@ font-size: 11px;
 line-height: 15px;
 text-align: center;
 }
+
+/* 
+==================================================
+BARBERS
+=================================================
+*/
+.barber-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.barber-name {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.barber-info {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--font-color-hover);
+  margin-bottom: 30px;
+}
+
+
