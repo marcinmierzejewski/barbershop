@@ -20,7 +20,7 @@
   --l-height-85: 5.3125rem;
   /* letter-spacing */
   --l-spacing-1: 0.1em;
-  /* font-color */
+  /* colors font, background */
   --font-color-main: #303030;
   --font-color-white: #FFFFFF;
   --font-color-hover: #FF6C00;
@@ -28,6 +28,7 @@
   --font-color-grey: #9DA4BD;
   --font-color-title: #555555;
   --color-background-light: #f7f7f7;
+  --font-color-placeholder: rgba(157, 164, 189, 0.4);
 }
 
 html {
@@ -109,6 +110,7 @@ figure {
   background-color: transparent;
   padding: 12px;
   text-transform: uppercase;
+  width: 160px;
 }
 
 .btn-black {
@@ -121,6 +123,7 @@ figure {
   background-color: transparent;
   padding: 12px;
   text-transform: uppercase;
+  width: 160px;
   }
 
 .btn-white:hover,
@@ -446,6 +449,7 @@ CONTACT
   line-height: 49px;
   letter-spacing: 0.05em;
   color: var(--font-color-white);
+  margin-bottom: 44px;
 }
 
 .contact-right-side {
@@ -462,6 +466,39 @@ CONTACT
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(240, 248, 255, 0.192);
+}
+
+.form-name::placeholder,
+.form-tel::placeholder,
+.form-textarea::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--font-color-placeholder)
+}
+
+.form-name,
+.form-tel {
+  padding-bottom: 8px;
+}
+
+.form-name {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.form-tel {
+  width: 260px;
+}
+
+.form-textarea {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  padding-bottom: 60px;
+  width: 560px;
+  resize: none;
 }
 
 /* 
