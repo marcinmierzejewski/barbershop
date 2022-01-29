@@ -27,8 +27,10 @@
   --font-color-before: rgba(157, 164, 189, 0.6);
   --font-color-grey: #9DA4BD;
   --font-color-title: #555555;
-  --color-background-light: #f7f7f7;
   --font-color-placeholder: rgba(157, 164, 189, 0.4);
+  --color-background-light: #f7f7f7;
+  --color-background-form: #191C26;
+  
 }
 
 html {
@@ -108,9 +110,9 @@ figure {
   border: 1px solid #FF6C00;
   border-radius: 25px;
   background-color: transparent;
-  padding: 12px;
+  padding: 12px 10px;
   text-transform: uppercase;
-  width: 160px;
+  width: 164px;
 }
 
 .btn-black {
@@ -121,9 +123,9 @@ figure {
   border: 1px solid #FF6C00;
   border-radius: 25px;
   background-color: transparent;
-  padding: 12px;
+  padding: 12px 10px;
   text-transform: uppercase;
-  width: 160px;
+  width: 164px;
   }
 
 .btn-white:hover,
@@ -224,7 +226,8 @@ HERO
   padding-top: 272px;
   padding-bottom: 206px;
   width: 100%;
-  background-color: #303030;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2),rgba(25, 28, 38, 0.2)),
+  url("../images/head-bg.jpg");
 }
 
 .main-title {
@@ -440,6 +443,10 @@ CONTACT
 */
 .contact {
   background-color: var(--font-color-main);
+}
+
+.contact-left-side {
+  background-color: var(--color-background-form);
 }
 
 .form-section-title {
