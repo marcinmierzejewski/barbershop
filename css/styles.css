@@ -450,6 +450,33 @@ BARBERS
   margin-bottom: 30px;
 }
 
+.barbers-social-list {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--val-30);
+  padding-top: 30px;
+}
+
+.social-list-link {
+  fill: var(--color-social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;  
+  background-color: var(--font-color-white);  
+  border-radius: 50%;
+}
+
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--font-color-hover);
+}
 /* 
 ==================================================
 GALLERY
