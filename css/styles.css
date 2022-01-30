@@ -180,7 +180,6 @@ HEADER
 
 .container-navigation {
   align-items: center;
-  
 }
 
 .navigation-logo {
@@ -506,10 +505,17 @@ CONTACT
 =================================================
 */
 .contact {
+  background-color: var(--color-background-form);
+  background-image: url("../images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: 100%;
 }
 
+
+
+
 .contact-left-side {
-  background-color: var(--color-background-form);
 }
 
 .form-section-title {
