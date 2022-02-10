@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marcin Mierzejewski" />
     <title>barbershop</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- modern normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
     />
+    <!-- animation link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- style css -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="header-container container disp-flex">
-        <a class="navigation-logo" href="#">
+        <a class="navigation-logo animate__heartBeat" href="#">
           <svg width="69" height="56">
             <use href="../images/icons.svg#icon-Logo"></use>
           </svg>
@@ -126,38 +134,46 @@
           <div class="services-list-container disp-flex">
             <ul class="service-left-side list">
               <li class="services-list-item disp-flex">
-                <span>Męskie strzyżenie</span
-                ><span class="prices"> od 100 zł.</span>
+                <span>Męskie strzyżenie</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 100 zł.</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Strzyżenie brody</span
-                ><span class="prices"> od 75 zł.</span>
+                <span>Strzyżenie brody</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 75 zł.</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Strzyżenie wąsów</span
-                ><span class="prices"> od 50 zł</span>
+                <span>Strzyżenie wąsów</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 50 zł</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Golenie brzytwą</span
-                ><span class="prices"> od 75 zł.</span>
+                <span>Golenie brzytwą</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 75 zł.</span>
               </li>
             </ul>
             <ul class="service-right-side list">
               <li class="services-list-item disp-flex">
-                <span>Strzyżenie jedna długość</span
-                ><span class="prices"> od 50 zł.</span>
+                <span>Strzyżenie jedna długość</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 50 zł.</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Strzyżenie maszynką</span
-                ><span class="prices"> od 75 zł.</span>
+                <span>Strzyżenie maszynką</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 75 zł.</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Strzyżenie chłopca (do 12 lat)</span
-                ><span class="prices"> od 80 zł.</span>
+                <span>Strzyżenie chłopca (do 12 lat)</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 80 zł.</span>
               </li>
               <li class="services-list-item disp-flex">
-                <span>Repigmentacja włosów</span
-                ><span class="prices"> od 100 zł.</span>
+                <span>Repigmentacja włosów</span>
+                <span class="services-list-line"></span>
+                <span class="prices"> od 100 zł.</span>
               </li>
             </ul>
           </div>
@@ -417,7 +433,7 @@
               <button class="btn-white" type="submit">WYSłAĆ</button>
             </form>
           </div>
-          <div class="contact-right-side  section">
+          <div class="contact-right-side section">
             <h2 class="form-section-title">Kontakt</h2>
             <address>
               <ul class="list">
