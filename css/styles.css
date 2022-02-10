@@ -78,6 +78,7 @@ figure {
 .link {
   text-decoration: none;
   color: inherit;
+  transition: color 250ms linear;
 }
 
 .link:hover,
@@ -113,6 +114,7 @@ figure {
   padding: 12px 10px;
   text-transform: uppercase;
   width: 164px;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .btn-black {
@@ -126,6 +128,7 @@ figure {
   padding: 12px 10px;
   text-transform: uppercase;
   width: 164px;
+  transition: background-color 250ms linear, color 250ms linear;
   }
 
 .btn-white:hover,
@@ -172,6 +175,7 @@ HEADER
 .header {
   justify-content: center;
   width: 100%;
+  position: absolute;
 }
 
 .header-container {
@@ -189,7 +193,7 @@ HEADER
 
 .navigation-items,
 .navigation-tel {
-  /* color: var(--font-color-white); */
+  color: var(--font-color-white);
   font-weight: 600;
   font-size: var(--font-size-12);
   line-height: var(--l-height-16);
@@ -219,12 +223,17 @@ HERO
   width: 155px;
 }
 
+.hero-list {
+  justify-content: flex-end;
+  padding-right: 82px;
+  transform: rotate(-90deg);
+}
+
 .hero-list .list-item  { 
   font-weight: 600;
   font-size: var(--font-size-11);
   line-height: var(--l-height-15);
   letter-spacing: 0.2em;
-  /* transform: rotate(-90deg); */
 }
 
 .hero-list-item:first-child {
