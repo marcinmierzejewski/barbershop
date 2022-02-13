@@ -517,7 +517,7 @@ BARBERS
   height: 44px;
   background-color: var(--font-color-white);
   border-radius: 50%;
-  transition: fill 250ms linear;
+  transition: fill 250ms linear, transform 150ms linear, border 250ms linear;
 }
 
 .social-list-item:not(:last-child) {
@@ -527,7 +527,10 @@ BARBERS
 .social-list-link:hover,
 .social-list-link:focus {
   fill: var(--font-color-hover);
+  transform: scale(1.2);  
+  border: 1px solid var(--font-color-hover);  
 }
+
 /* 
 ==================================================
 GALLERY
@@ -688,7 +691,7 @@ BACKDROP
 
 .is-hidden {
   opacity: 0;
-  visibility: hiddenb;
+  visibility: hidden;
   pointer-events: none;
   transform: scale(0);
 }
