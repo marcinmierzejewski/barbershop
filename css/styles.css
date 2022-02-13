@@ -671,6 +671,60 @@ BACKDROP
   border-radius: 4px;
 }
 
+.modal-form-container {
+  padding: 40px;
+}
+
+.modal-form-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.modal-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form-items {
+  position: relative;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.form-icon-div {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .close-btn {
   position: absolute;
   top: 8px;
